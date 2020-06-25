@@ -314,9 +314,7 @@ img {
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
-  grid-area: bioimage;
-  height: 100%;
-  object-fit: cover; }
+  grid-area: bioimage; }
 
 #about-a .bio {
   grid-area: bio;
@@ -618,11 +616,8 @@ img {
     height: 10rem; }
     #main-footer .footer-content {
       flex-direction: column;
-      padding: 1rem;
-      height: 7rem; }
-      #main-footer .footer-content img {
-        height: auto;
-        width: auto; }
+      padding: 0.5rem;
+      height: auto; }
       #main-footer .footer-content .social {
         margin-top: 0.8rem; } }
 
@@ -636,6 +631,9 @@ img {
   #about-c .about-logos,
   #about-d .testimonials {
     grid-template-columns: repeat(2, 1fr); }
+  #about-a .bio-image {
+    height: 100%;
+    object-fit: cover; }
   #contact-c h1 {
     font-size: 2rem; }
   .items .item {
