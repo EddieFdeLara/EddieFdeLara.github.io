@@ -446,6 +446,12 @@ img {
     height: 100px; }
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
+  #contact-a .text-fields input[type=text]:focus,
+  #contact-a .text-fields input[type=email]:focus,
+  #contact-a .text-fields textarea:focus {
+    border: 2px solid steelblue;
+    box-shadow: 0 0 10px rgba(31, 141, 214, 0.5);
+    outline: none !important; }
 
 #contact-a button[type='submit'] {
   width: 50%; }
@@ -635,6 +641,9 @@ img {
   #about-c .about-logos,
   #about-d .testimonials {
     grid-template-columns: repeat(2, 1fr); }
+  #about-a .about-info {
+    display: flex;
+    flex-direction: column; }
   #about-a .bio-image {
     height: 100%;
     object-fit: cover; }
@@ -647,12 +656,12 @@ img {
     .items .item h2 {
       font-size: 1.2rem; }
   #main-footer {
-    height: 10rem; }
+    height: 11rem; }
     #main-footer .footer-content {
       flex-direction: column;
       align-items: center;
-      padding: 1.2rem;
-      height: 7rem; }
+      padding: 1.5rem;
+      height: 8rem; }
       #main-footer .footer-content img {
         height: auto;
         width: auto; }
