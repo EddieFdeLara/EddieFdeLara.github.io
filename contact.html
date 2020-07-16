@@ -36,14 +36,18 @@
       <h2 class="section-title">Contactame</h2>
       <div class="bottom-line"></div>
       <p class="lead">Aqui me puedes escribir</p>
-      <form action="">
+      <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <div class="text-fields">
-          <input type="text" class="text-input name-input" placeholder="Nombre" />
+          <input name="name" type="text" class="text-input name-input" placeholder="Nombre" />
 
-          <input type="text" class="text-input subject-input" placeholder="Asunto" />
-          <input type="email" class="text-input email-input" placeholder="Email" />
-          <input type="text" class="text-input phone-input" placeholder="Telefono" />
-          <textarea class="text-input message-input" placeholder="Mensaje"></textarea>
+          <input name="subject" type="text" class="text-input subject-input" placeholder="Asunto" />
+          <input name="email" type="email" class="text-input email-input" placeholder="Email" />
+          <input name="phone" type="text" class="text-input phone-input" placeholder="Teléfono" />
+          <textarea name="message" class="text-input message-input" placeholder="Mensaje"></textarea>
+          <!-- recaptcha -->
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
         </div>
         <button type="submit" class="btn-dark">Enviar</button>
       </form>
